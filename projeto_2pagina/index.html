@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../projeto_2pagina/imagens/favicon.ico" type="image/x-icon">
+    <!--ICONES-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <title>Querys DashBoard</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./imagens/teste-removebg-preview.png">
+                    <h2>Top<span class="sapp">Sapp</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>DashBoard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Cadastrar Cliente</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">assignment</span>
+                    <h3>Documentar Query</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">calendar_month</span>
+                    <h3>Agendar Procedimento</h3>
+                    <span class="menssagem-aviso">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">keyboard_return</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!--FIM DO MENU LATERAL-->
+        <main>
+            <h1>DashBoard</h1>
+            <div class="date">
+                <input type="date">
+
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">equalizer</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Chamados Finalizados</h3>
+                            <h1>12</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 Horas</small>
+                </div>
+                <!--FIM DO MENU LATERAL-->
+                <div class="expenses">
+                    <span class="material-icons-sharp">data_exploration</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Chamados Pendentes</h3>
+                            <h1>24</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>20%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 Horas</small>
+                </div>
+                <!--FIM DO MENU LATERAL-->
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Agendamento de Importação/Exportação.</h3>
+                            <h1>2</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>10%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 Horas</small>
+                </div>
+                <!--FIM DO MENU LATERAL-->
+            </div>
+             <!--FIM DO MENU LATERAL-->
+             <div class="recent-orders">
+                 <h2>Procedimentos Realizados</h2>
+                 <table>
+                     <thead>
+                         <tr>
+                             <th>Chamado</th>
+                             <th>Cliente</th>
+                             <th>Tipo Intervenção</th>
+                             <th>Unid. Afetadas</th>
+                             <th>Status</th>
+                             <th></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>42100</td>
+                             <td>#363 JC TELECOM SERVICOS DE TELECOMUNICACOES LTDA - EPP 3</td>
+                             <td>UPDATE</td>
+                             <td>284</td>
+                             <td class="warning">FECHADO</td>
+                             <td class="primary">Ver Detalhes</td>
+                         </tr>
+                         <tr>
+                            <td>45581</td>
+                            <td>#888 SOLON ARAUJO TELECOMUNICACOES EIRELI ­ ME</td>
+                            <td>DELETE</td>
+                            <td>3450</td>
+                            <td class="warning">FECHADO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>46070</td>
+                            <td>#1210 PONTENET TELEINFORMATICA LTDA</td>
+                            <td></td>
+                            <td></td>
+                            <td class="warning danger">ABERTO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>46033</td>
+                            <td>#916 DMI PROVEDOR DE INTERNET LTDA - ME</td>
+                            <td>UPDATE</td>
+                            <td>5</td>
+                            <td class="warning">FECHADO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>43478</td>
+                            <td>#413 L E M TELECOMUNICACOES LTDA - ME</td>
+                            <td>DELETE</td>
+                            <td>84</td>
+                            <td class="warning">FECHADO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>43478</td>
+                            <td>#413 L E M TELECOMUNICACOES LTDA - ME</td>
+                            <td>DELETE</td>
+                            <td>791</td>
+                            <td class="warning">FECHADO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>43478</td>
+                            <td>#413 L E M TELECOMUNICACOES LTDA - ME</td>
+                            <td>DELETE</td>
+                            <td>123</td>
+                            <td class="warning">FECHADO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>43317</td>
+                            <td>#686 SIMPLEX INFORMATICA EIRELI - ME</td>
+                            <td>INSERT</td>
+                            <td>47229</td>
+                            <td class="warning">FECHADO</td>
+                            <td class="primary">Ver Detalhes</td>
+                        </tr>
+                     </tbody>
+                 </table>
+                 <a href="#">Mostrar Todos</a>
+             </div>
+        </main>
+        <!--------------FIM LISTA TODOS------------->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">nightlight</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá,<b>Jhonatan</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../projeto_2pagina/imagens/foto.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--------FIM TOPO---------->
+            <div class="recent-updates">
+                <h2>Procedimentos Pendetes</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/outrafoto.jpeg">
+                        </div>
+                        <div class="message">
+                            <p><b>Sebastian</b> abriu chamado nº 45687</p>
+                            <small class="text-muted">Chamado aberto a 2 minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/132098151_4845975425444027_4297417412987647423_n.png">
+                        </div>
+                        <div class="message">
+                            <p><b>Marcos de Oliveira</b> abriu chamado nº 47685</p>
+                            <small class="text-muted">Chamado aberto a 18 minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/meme-temer-338x600.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Gustavo Oiveira</b> abriu chamado nº 45534</p>
+                            <small class="text-muted">Chamado aberto a 1 hora atrás</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/puta-bida-4937573.png">
+                        </div>
+                        <div class="message">
+                            <p><b>Eder</b> abriu chamado nº 46852</p>
+                            <small class="text-muted">Chamado aberto a 31 minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------FIM UPDATES-------------->
+            <div class="sales-analytics">
+                <h2>Fila de Chamados</h2>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">content_paste</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Chamados Novos</h3>
+                            <small class="text-muted">Nas ultimas 24 Horas</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>156</h3>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">content_paste_go</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Chamados Encaminhados</h3>
+                            <small class="text-muted">Nas ultimas 24 Horas</small>
+                        </div>
+                        <h5 class="success">32</h5>
+                        <h3>154</h3>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">emoji_objects</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Chamados Finalizados</h3>
+                            <small class="text-muted">Nas ultimas 24 Horas</small>
+                        </div>
+                        <h5 class="success">24</h5>
+                        <h3>151</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">emoji_objects</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Chamados sem Solução</h3>
+                            <small class="text-muted">Nas ultimas 24 Horas</small>
+                        </div>
+                        <h5 class="danger">151</h5>
+                        <h3>151</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Adicionar Lista</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>Desenvolvido por <i class="fa fa-heart"></i>
+            <a target="_blank" href="https://adbrax.com.br">Grupo AdBrax</a>
+        </p>
+    </footer>
+    <script src="./orders.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
