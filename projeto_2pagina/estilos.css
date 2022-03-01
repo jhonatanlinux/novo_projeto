@@ -5,13 +5,13 @@
     --color-success: #4bffff;
     --color-warning: #7ac2c2;
     --color-white: #ffffff;
-    --color-info-dark: #335353;
+    --color-info-dark: #538a8a;
     --color-info-light: #4ac7c7;
     --color-dark: #233f3f;
     --color-light: #b3ffff85;
     --color-primary-variant: #00fdfd;
     --color-dark-variant: #005252;
-    --color-background: #ddf8ff;
+    --color-background: #c5eaff;
     --color-topsapp: #4aa6fd;
 
     --card-border-radius: 2rem;
@@ -62,7 +62,7 @@ body{
     display: grid;
     width: 96%;
     margin: 0 auto;
-    gap: 1.8rem;
+    gap: 1.2rem;
     grid-template-columns: 14rem auto 23rem;
 }
 a{
@@ -123,7 +123,12 @@ b{
 }
 aside{
     height: 100vh;
-    background: rgb(255, 251, 251);
+    background: var(--color-white);
+    border-radius: var(--border-radius-3);
+}
+aside h2{
+    background: var(--color-white);
+    color: var(--color-topsapp);
 }
 aside .top{
     display: flex;
@@ -133,7 +138,7 @@ aside .top{
 }
 aside .logo{
     display: flex;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 aside .logo img{
     width: 2rem;
@@ -145,12 +150,13 @@ aside .close{
 
 /*------SIDEBAR-------*/
 aside .sidebar{
-    background: #ffffff;
+    background: var(--color-white);
     display: flex;
     flex-direction: column;
-    height: 86vh;
+    height: 100%;
     position: relative;
     top: 3rem;
+    border-radius: var(--border-radius-3);
 }
 aside h3{
     font-weight: 500;
@@ -179,6 +185,7 @@ aside .sidebar a.active{
     background: var(--color-light);
     color: var(--color-topsapp);
     margin-left: 0;
+    border-radius: var(--border-radius-3);
 }
 aside .sidebar a.active:before{
     content: '';
@@ -320,6 +327,11 @@ main .recent-orders table{
 main .recent-orders table:hover{
     box-shadow: none;
 }
+main .recent-orders .primary:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 10px;
+}
 main table tbody td{
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
@@ -443,6 +455,10 @@ main .recent-orders a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.right .sales-analytics .add-product:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
 }
 .right .sales-analytics .add-product div{
     display: flex;
@@ -591,18 +607,17 @@ main .recent-orders a{
 
 }
 footer {
-    background-color: #ddf8ff;
-    color: #0516ff;
+    background: var(--color-white);
+    color: var(--color-topsapp);
     font-size: 14px;
     bottom: 0;
     position: fixed;
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 999;
 }
 
 footer p {
     margin: 10px 0;
-    color: #000000;
+    color: var(--color-topsapp);
 }
